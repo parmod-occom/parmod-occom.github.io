@@ -1,129 +1,278 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width,initial-scale=1">
-		<title>Parmod Occom — Resume</title>
-		<style>
-			:root { --accent:#2b6cb0; --muted:#555; font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; }
-			body { max-width:900px; margin:36px auto; color:#111; line-height:1.45; padding:0 20px; }
-			header { display:flex; flex-direction:column; gap:6px; margin-bottom:18px; }
-			h1 { margin:0; font-size:28px; letter-spacing:-0.5px; }
-			.contact { color:var(--muted); font-size:14px; }
-			h2 { margin:18px 0 6px; color:var(--accent); font-size:18px; }
-			h3 { margin:14px 0 6px; font-size:16px; }
-			.section { margin-bottom:14px; }
-			.job { margin-bottom:10px; }
-			.company { color:var(--muted); font-size:14px; margin-bottom:6px; }
-			ul { margin:6px 0 0 18px; }
-			.skills { display:flex; flex-wrap:wrap; gap:8px; }
-			.skill-pill { background:#f3f4f6; padding:6px 8px; border-radius:6px; font-size:13px; color:#111; }
-			footer { margin-top:20px; color:var(--muted); font-size:13px; }
-			@media print { body { margin:12mm; } }
-		</style>
-	</head>
-	<body>
-		<header>
-			<h1>Parmod Occom</h1>
-			<div class="contact">Toronto, ON · <a href="mailto:parmod.occom@example.com">parmod.occom@example.com</a> · (555) 123-4567 · <a href="https://github.com/parmod-occom">github.com/parmod-occom</a> · <a href="https://linkedin.com/in/parmod-occom">linkedin.com/in/parmod-occom</a></div>
-			<div style="color:var(--muted);">Senior Software Engineer — Full‑Stack · Open‑to‑Remote</div>
-		</header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parmod Kumar | Software Engineer</title>
 
-		<main>
-			<section class="section" id="summary">
-				<h2>Professional Summary</h2>
-				<p>Full‑stack software engineer with 8+ years building scalable web applications and distributed systems. Experienced in Python, TypeScript, React, and cloud platforms (AWS/GCP). Strong track record in delivering high‑impact features, improving performance, and mentoring teams.</p>
-			</section>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-			<section class="section" id="experience">
-				<h2>Experience</h2>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-				<div class="job">
-					<h3>Senior Software Engineer</h3>
-					<div class="company">Acme Tech Inc., Toronto, ON · Jun 2020 — Present</div>
-					<ul>
-						<li>Led development of a microservices‑based analytics platform serving 1M+ users, improving query throughput by 4×.</li>
-						<li>Designed and implemented event‑driven data pipelines (Kafka → Spark → BigQuery), reducing ETL time from 6 hours to 45 minutes.</li>
-						<li>Mentored 5 engineers; introduced code review and testing standards that reduced production incidents by 30%.</li>
-						<li>Coordinated cross‑functional launches with product and design; delivered three major releases on schedule.</li>
-					</ul>
-				</div>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
 
-				<div class="job">
-					<h3>Software Engineer</h3>
-					<div class="company">BrightApps LLC, Toronto, ON · Jan 2017 — May 2020</div>
-					<ul>
-						<li>Built and maintained core features for a React + Node.js SaaS product used by enterprise customers.</li>
-						<li>Implemented RBAC and SSO integrations (SAML/OAuth2) for enterprise customers, increasing sales‑readiness.</li>
-						<li>Improved frontend performance (bundle size, lazy loading), cutting average page load by 40%.</li>
-					</ul>
-				</div>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-				<div class="job">
-					<h3>Junior Developer</h3>
-					<div class="company">Innovate Solutions, Toronto, ON · Jul 2014 — Dec 2016</div>
-					<ul>
-						<li>Contributed to backend services in Python and Django; added REST APIs and unit tests.</li>
-						<li>Automated deployment pipelines with Docker and Jenkins, reducing deployment time and errors.</li>
-					</ul>
-				</div>
+<body>
 
-			</section>
+<div class="resume">
 
-			<section class="section" id="education">
-				<h2>Education</h2>
-				<div class="company">B.Sc. Computer Science — University of Toronto · 2014</div>
-			</section>
+    <!-- Sidebar -->
 
-			<section class="section" id="projects">
-				<h2>Selected Projects</h2>
-				<h3>Open Source Contribution — data‑ops‑toolkit</h3>
-				<p>Developed modular ingestion components and CI workflows; repository gained 500+ stars and is used by multiple teams.</p>
+    <aside class="sidebar">
 
-				<h3>Personal Project — TaskFlow (productivity app)</h3>
-				<p>Full‑stack app (React, Node.js, PostgreSQL); implemented offline sync and push notifications.</p>
-			</section>
+        <div class="profile">
 
-			<section class="section" id="skills">
-				<h2>Skills</h2>
-				<div class="skills">
-					<span class="skill-pill">Python</span>
-					<span class="skill-pill">JavaScript/TypeScript</span>
-					<span class="skill-pill">SQL</span>
-					<span class="skill-pill">React</span>
-					<span class="skill-pill">Node.js</span>
-					<span class="skill-pill">Django</span>
-					<span class="skill-pill">Kafka</span>
-					<span class="skill-pill">Spark</span>
-					<span class="skill-pill">BigQuery</span>
-					<span class="skill-pill">AWS</span>
-					<span class="skill-pill">GCP</span>
-					<span class="skill-pill">Docker</span>
-					<span class="skill-pill">Kubernetes</span>
-					<span class="skill-pill">Terraform</span>
-					<span class="skill-pill">TDD</span>
-				</div>
-			</section>
+            <div class="avatar">
+                <i class="fa-solid fa-user"></i>
+            </div>
 
-			<section class="section" id="certs">
-				<h2>Certifications & Awards</h2>
-				<ul>
-					<li>AWS Certified Solutions Architect — Associate</li>
-					<li>Employee Excellence Award — Acme Tech Inc. (2022)</li>
-				</ul>
-			</section>
+            <h1>Parmod Kumar</h1>
 
-			<section class="section" id="languages">
-				<h2>Languages</h2>
-				<ul>
-					<li>English (native)</li>
-					<li>Punjabi (conversational)</li>
-				</ul>
-			</section>
-		</main>
+            <h2>Software Engineer</h2>
 
-		<footer>
-			References available on request.
-		</footer>
-	</body>
+        </div>
+
+        <section>
+
+            <h3>Contact</h3>
+
+            <ul>
+
+                <li>
+                    <i class="fa-solid fa-phone"></i>
+                    +91 76963 99515
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-envelope"></i>
+                    pk131132@gmail.com
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Chandigarh, India
+                </li>
+
+                <li>
+                    <i class="fab fa-linkedin"></i>
+
+                    <a href="https://www.linkedin.com/in/parmod-kumar-a2384b139" target="_blank">
+                        LinkedIn
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <i class="fab fa-github"></i>
+
+                    <a href="https://github.com/parmod-k" target="_blank">
+                        github.com/parmod-k
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </section>
+
+        <section>
+
+            <h3>Technical Skills</h3>
+
+            <div class="skills">
+
+                <span>PHP</span>
+                <span>Laravel</span>
+                <span>Python</span>
+                <span>Django</span>
+                <span>FastAPI</span>
+                <span>React</span>
+                <span>Node.js</span>
+                <span>Tailwind CSS</span>
+                <span>REST API</span>
+                <span>MySQL</span>
+                <span>PostgreSQL</span>
+                <span>SQL</span>
+                <span>AWS</span>
+                <span>Docker</span>
+                <span>Git</span>
+                <span>Swagger</span>
+                <span>CI/CD</span>
+                <span>Postman</span>
+
+            </div>
+
+        </section>
+
+        <section>
+
+            <h3>Languages</h3>
+
+            <ul class="simple">
+
+                <li>English</li>
+                <li>Hindi</li>
+                <li>Punjabi</li>
+
+            </ul>
+
+        </section>
+
+    </aside>
+
+    <!-- Main -->
+
+    <main>
+
+        <section>
+
+            <h2>Professional Summary</h2>
+
+            <p>
+
+                Software Engineer experienced in building scalable web applications,
+                backend systems, RESTful APIs, and AI-powered solutions using PHP,
+                Laravel, Python, Django, FastAPI, React, and Node.js.
+
+                Skilled in AWS deployment, database optimization, CI/CD,
+                system architecture, and performance tuning. Passionate about
+                delivering secure, maintainable, and high-performance software
+                while continuously learning emerging technologies.
+
+            </p>
+
+        </section>
+
+        <section>
+
+            <h2>Experience</h2>
+
+            <div class="card">
+
+                <div class="top">
+
+                    <div>
+
+                        <h3>Software Engineer</h3>
+
+                        <h4>Interserve Solutions (Occom)</h4>
+
+                    </div>
+
+                    <span>Jun 2025 – Present</span>
+
+                </div>
+
+                <ul>
+
+                    <li>Develop backend applications using PHP & Laravel.</li>
+
+                    <li>Build RESTful APIs for web and mobile applications.</li>
+
+                    <li>Optimize MySQL database performance and indexing.</li>
+
+                    <li>Deploy and maintain applications on AWS.</li>
+
+                    <li>Configure CI/CD pipelines.</li>
+
+                    <li>Troubleshoot production issues and improve application reliability.</li>
+
+                    <li>Integrate AI services and intelligent automation features.</li>
+
+                    <li>Collaborate with frontend developers using React.js.</li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+        <section>
+
+            <h2>Projects</h2>
+
+            <div class="card">
+
+                <h3>Occom Billing System, CRM & Mobile Applications</h3>
+
+                <p>
+
+                    Designed and maintained enterprise billing systems,
+                    CRM solutions, customer portals, websites, and mobile
+                    applications.
+
+                </p>
+
+                <p>
+
+                    Developed scalable backend APIs, optimized MySQL queries,
+                    integrated AI capabilities, managed AWS deployments,
+                    and improved application performance.
+
+                </p>
+
+                <div class="tech">
+
+                    <span>Laravel</span>
+                    <span>PHP</span>
+                    <span>Python</span>
+                    <span>Django</span>
+                    <span>FastAPI</span>
+                    <span>React</span>
+                    <span>Node.js</span>
+                    <span>AWS</span>
+                    <span>MySQL</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section>
+
+            <h2>Education</h2>
+
+            <div class="card">
+
+                <h3>Bachelor of Technology (Computer Science)</h3>
+
+                <h4>Maharaja Ranjit Singh University, Bathinda</h4>
+
+                <p>2024</p>
+
+            </div>
+
+        </section>
+
+        <section>
+
+            <h2>Tools</h2>
+
+            <div class="tech">
+
+                <span>Git</span>
+                <span>Docker</span>
+                <span>Postman</span>
+                <span>Swagger</span>
+                <span>JIRA</span>
+                <span>Trello</span>
+                <span>AWS</span>
+                <span>CI/CD</span>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
 </html>
